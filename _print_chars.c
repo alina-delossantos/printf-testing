@@ -33,9 +33,11 @@ int _print_char(va_list list)
  * Return: string length
  */
 
-void _print_string(int i, int j, char *string)
+int _print_string(char *string)
 {
+	int i;
 
-	for(; i <= j; i++)
+	for(i = 0; string[i] != '\0'; i++)
 		_putchar(string[i]);
+	return(i);
 }
