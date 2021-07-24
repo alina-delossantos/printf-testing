@@ -22,7 +22,7 @@ int _print_char(va_list characters)
 int _print_string(va_list string)
 {
 	char *str;
-	int size;
+	int i;
 
 	str = var_args(string, char*);
 
