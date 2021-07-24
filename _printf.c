@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 				counter += _putchar(va_arg(list, int));
 				break;
 			case 's':
-				counter += _print_string(va_arg(list, char *));
+				counter += _string_print(va_arg(list, char *));
 				break;
 			case '%':
 				counter += _putchar('%');

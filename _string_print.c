@@ -7,7 +7,7 @@
  * Return: string length
  */
 
-int _print_string(char *string)
+int _string_print(char *string)
 {
 	int i;
 
