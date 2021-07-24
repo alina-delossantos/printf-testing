@@ -37,6 +37,8 @@ int _printf(const char *format, ...)
 			case 's':
 				counter += _print_string(va_arg(list, char *));
 				break;
+			case '%':
+				counter += _putchar(va_arg(list, int));
 			}
 			ck = 0;
 		}
