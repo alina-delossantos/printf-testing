@@ -7,6 +7,7 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+int _printff(const char *format, ...);
 int _print_perc(__attribute__((unused)) va_list list);
 int _print_char(va_list list);
 int _print_string(va_list list);
