@@ -1,30 +1,43 @@
 #include "holberton.h"
 
 /**
- * _print_chars - prints characters
- * @characters: variadic list
+ * _print_perc - prints percentage symbol
+ * @list: variadic list
  *
  * Return: string length
  */
 
-int _print_char(va_list characters)
+int _print_perc(__attribute__((unused)) va_list list)
 {
-	return(_putchar(va_args(characters, int)));
+	_putchar('%');
+	return(1);
+}
+
+/**
+ * _print_chars - prints characters
+ * @list: variadic list
+ *
+ * Return: string length
+ */
+
+int _print_char(va_list list)
+{
+	return(_putchar(va_args(list, int)));
 }
 
 /**
  * _print_string - prints string
- * @string: string to be printed
+ * @list: string to be printed
  *
  * Return: string length
  */
 
-int _print_string(va_list string)
+int _print_string(va_list list)
 {
 	char *str;
 	int i;
 
-	str = var_args(string, char*);
+	str = var_args(list, char*);
 
 	if(str == NULL)
 		str = ("null");
