@@ -38,7 +38,11 @@ int _printf(const char *format, ...)
 				counter += _print_string(va_arg(list, char *));
 				break;
 			case '%':
-				counter += _putchar(va_arg(list, int));
+				counter += _putchar('%');
+				break;
+			case '\n':
+				_putchar(10);
+				break;
 			}
 			ck = 0;
 		}
