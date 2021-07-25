@@ -7,7 +7,7 @@
  * Return: string length
  */
 
-int _nbr_print(int nbr)
+int _nbr_print(unsigned int nbr)
 {
 	unsigned int integ;
 
