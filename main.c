@@ -2,7 +2,6 @@
 
 int main (void)
 {
-	_printf("holaaaaaaaaaaaaaaaaaaa %%%%% %c %s\n", a chau);
-	_putchar(10);
+	_printf("%s\n", "aaaaa");
 	return(0);
 }
