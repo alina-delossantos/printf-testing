@@ -2,6 +2,6 @@
 
 int main (void)
 {
-	_printf("%s\n", "aaaaa");
+	_printf("String%s Char %c\n","aaaaa", 'g');
 	return(0);
 }
