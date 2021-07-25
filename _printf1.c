@@ -43,6 +43,9 @@ int _printf(const char *format, ...)
 			case '\n':
 				_putchar(10);
 				break;
+			case 'd':
+				counter += _number_print(va_arg(list, int *));
+				break;
 			}
 			ck = 0;
 		}
