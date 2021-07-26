@@ -12,7 +12,7 @@ int _num_print(int n)
 	unsigned int num = n;
 	int counter;
 
-	if (n != NULL)
+	if (n)
 	{
 	if (n < 0)
 	{

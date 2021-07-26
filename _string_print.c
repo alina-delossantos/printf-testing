@@ -16,6 +16,6 @@ int _string_print(char *string)
 
 	for(i = 0; string[i] != '\0'; i++)
 		_putchar(string[i]);
-	return(i);
 	}
+	return(i);
 }
