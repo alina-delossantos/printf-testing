@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 			case '%':
 				counter += _putchar('%');
 				break;
-			case '\n':
+						case '\n':
 				_putchar(10);
 				break;
 			}
