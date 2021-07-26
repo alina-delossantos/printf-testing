@@ -10,13 +10,12 @@
 int _printf(const char *format, ...)
 {
 	va_list list;
-	int i;
-	int ck = 0, counter = 0;
+	int i, ck = 0, counter = 0;
 
 	if (format)
 	{
 		va_start(list, format);
-	for(i = 0; format[i] ; i++)
+	for(i = 0; format[i] != '\0' ; i++)
 	{
 		if(!ck)
 		{
@@ -43,8 +42,11 @@ int _printf(const char *format, ...)
 			case 'd':
 				counter += _num_print(va_arg(list, int));
 				break;
+			case 'i':
+				counter += _num_print(va_arg(list, int));
+				break;
 			case '\n':
-								_putchar(10);
+				_putchar(10);
 				break;
 			}
 			ck = 0;
@@ -52,5 +54,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(list);
 	}
-	return(i);
+	return(counter);
 }
