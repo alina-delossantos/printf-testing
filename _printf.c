@@ -40,8 +40,11 @@ int _printf(const char *format, ...)
 			case '%':
 				counter += _putchar('%');
 				break;
-						case '\n':
-				_putchar(10);
+			case 'd':
+				counter += _num_print(va_arg(list, int));
+				break;
+			case '\n':
+								_putchar(10);
 				break;
 			}
 			ck = 0;
