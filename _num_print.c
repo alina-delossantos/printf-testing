@@ -10,20 +10,17 @@
 int _num_print(int n)
 {
 	unsigned int num = n;
-	int counter;
 
-	if (n)
-	{
 	if (n < 0)
 	{
 		_putchar('-');
 		num *= -1;
 	}
-	if ((num / 10) > 0)
+	if (num / 10)
 	{
 		_num_print(num / 10);
 	}
-	counter = _putchar((num % 10) + '0');
-	}
-	return(counter);
+
+		_putchar((num % 10) + '0');
+	return(n);
 }
